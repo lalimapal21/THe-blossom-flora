@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Flora - Fresh Blooms, Fresh Smiles!</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM6XLK98XF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BM6XLK98XF');
+</script>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#5d4037', // Deep Brown/Purple from the image
+                        'primary-light': '#8d6e63', // Lighter Taupe/Brown
+                        'accent-pink': '#d81b60', // Vibrant Accent Color
+                        'neutral-bg': '#f5f5f5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaPKY00o4s49EfCrOrLgi3x9J8vISt2hL0Gw&s')",
+                        'flower-bg': "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaPKY00o4s49EfCrOrLgi3x9J8vISt2hL0Gw&s')",
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Load Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Icon library (lucide-react via script for HTML) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans text-primary-dark bg-white">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center h-16">
+                <!-- Logo/Brand Name -->
+                <div class="flex-shrink-0">
+                    <a href="#top" class="text-2xl font-serif font-bold text-primary-dark">Blossom Flora</a>
+                </div>
+                <!-- Desktop Navigation Links -->
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#shop" class="text-primary-dark hover:text-accent-pink px-3 py-2 rounded-md text-sm font-medium transition duration-150">Shop</a>
+                    <a href="#services" class="text-primary-dark hover:text-accent-pink px-3 py-2 rounded-md text-sm font-medium transition duration-150">Services</a>
+                    <a href="#about" class="text-primary-dark hover:text-accent-pink px-3 py-2 rounded-md text-sm font-medium transition duration-150">About</a>
+                    <a href="#contact" class="text-primary-dark hover:text-accent-pink px-3 py-2 rounded-md text-sm font-medium transition duration-150">Contact</a>
+                </div>
+                <!-- Mobile Menu Button (Placeholder for functionality) -->
+                <button id="mobile-menu-button" class="sm:hidden p-2 text-primary-dark rounded-md hover:bg-neutral-bg">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <main id="top" class="pt-0">
+        <section class="relative bg-primary-dark h-96 md:h-[60vh] flex items-center justify-center overflow-hidden rounded-b-2xl shadow-xl">
+            <!-- Background Image/Overlay -->
+            <div class="absolute inset-0 bg-flower-bg bg-cover bg-center opacity-70"></div>
+            <!-- Content -->
+            <div class="relative z-10 text-center p-6 bg-white bg-opacity-90 rounded-xl shadow-2xl m-4">
+                <h1 class="text-5xl md:text-7xl font-serif font-extrabold text-primary-dark leading-tight mb-4">
+                    Fresh Blooms, Fresh Smiles!
+                </h1>
+                <p class="text-xl md:text-2xl text-primary-light mb-8 max-w-xl mx-auto">
+                    Handcrafted floral designs for every moment, delivered with care.
+                </p>
+                <!-- Key Call-to-Action Button -->
+                <a href="#shop" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-accent-pink hover:bg-pink-700 transition duration-300 transform hover:scale-105">
+                    Shop Our Spring Collection
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="py-16 bg-neutral-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:flex lg:items-center lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <!-- Placeholder Image (matches the theme of the uploaded image) -->
+                        <img src="https://blossombydaisy.com.au/cdn/shop/files/LargePosy_e26818f8-b8f8-45e7-ad3d-70c06bcdc746.jpg?v=1691628258&width=533" alt="A large, vibrant floral arrangement at an outdoor event." class="rounded-2xl shadow-xl w-full h-auto object-cover transform hover:rotate-1 transition duration-500">
+                    </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0">
+                        <h2 class="text-4xl font-serif font-bold text-primary-dark mb-4 border-b-2 border-accent-pink pb-2 inline-block">About Blossom Flora</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            At **Blossom Flora**, we believe that every flower has a story to tell. We are dedicated to sourcing the freshest, most beautiful blooms to create handcrafted designs for every occasion — from birthdays and anniversaries to grand weddings and corporate events.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Our mission is to spread joy and beauty through meticulous design and reliable, doorstep delivery. We focus on sustainable practices to ensure our process is as clean as our presentation is stunning.
+                        </p>
+                        <a href="#contact" class="text-accent-pink font-semibold hover:text-pink-700 transition duration-150 inline-flex items-center">
+                            Meet Our Designers <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Featured Products / Shop Section (High conversion potential) -->
+        <section id="shop" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-center text-4xl font-serif font-bold text-primary-dark mb-12">Our Bestselling Arrangements</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Product Card 1: The Classic Romance -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:shadow-2xl hover:scale-[1.02] transition duration-300">
+                        <img src="https://cdn.bloomsflora.com/uploads/product/bloomsflora/DEC2024/RedandWhiteRosesBouquet-1735625455588.webp" alt="Classic red rose bouquet" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif font-semibold text-primary-dark mb-2">The Classic Romance</h3>
+                            <p class="text-gray-500 mb-4">Timeless red roses paired with delicate baby's breath.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-accent-pink">$89.99</span>
+                                <button onclick="addToCart('Classic Romance')" class="bg-primary-light text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-dark transition duration-150 shadow-md">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: Serene Meadow -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:shadow-2xl hover:scale-[1.02] transition duration-300">
+                        <img src="https://cdn.bloomsflora.com/uploads/product/bloomsflora/DEC2024/YellowRosesinaBasket-1733814605906.webp" alt="A colorful wildflower arrangement" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif font-semibold text-primary-dark mb-2">Serene Meadow</h3>
+                            <p class="text-gray-500 mb-4">A mix of seasonal wildflowers and lush greenery.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-accent-pink">$64.50</span>
+                                <button onclick="addToCart('Serene Meadow')" class="bg-primary-light text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-dark transition duration-150 shadow-md">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: The Sunbeam Box -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:shadow-2xl hover:scale-[1.02] transition duration-300">
+                        <img src="https://cdn.bloomsflora.com/uploads/landing_page/NOV2024/carnations-1731923092844.webp" alt="Bright yellow tulips in a decorative box" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif font-semibold text-primary-dark mb-2">The Sunbeam Box</h3>
+                            <p class="text-gray-500 mb-4">A cheerful box of vibrant yellow tulips, perfect for gifting.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-bold text-accent-pink">$55.00</span>
+                                <button onclick="addToCart('Sunbeam Box')" class="bg-primary-light text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary-dark transition duration-150 shadow-md">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-accent-pink text-base font-medium rounded-full text-accent-pink hover:bg-accent-pink hover:text-white transition duration-300 shadow-lg">
+                        Browse All Bouquets
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Services & Video Content Section -->
+        <section id="services" class="py-16 bg-neutral-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-serif font-bold text-primary-dark">More Than Just Delivery</h2>
+                    <p class="mt-2 text-xl text-gray-600">Explore our specialty services and see us in action.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Specialty Services -->
+                    <div class="space-y-8">
+                        <!-- Service Card 1: Weddings -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
+                            <i data-lucide="heart-handshake" class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary-dark mb-1">Bespoke Wedding Florals</h3>
+                                <p class="text-gray-600">Complete service for your special day. Consult with our lead designer for custom bouquets and venue decor.</p>
+                                <a href="#" class="text-sm text-accent-pink font-medium hover:underline mt-1 block">View Portfolio</a>
+                            </div>
+                        </div>
+                        <!-- Service Card 2: Subscriptions -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
+                            <i data-lucide="calendar-check" class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary-dark mb-1">Weekly & Monthly Subscriptions</h3>
+                                <p class="text-gray-600">Keep your home or office fresh with rotating seasonal arrangements. Pause or cancel anytime.</p>
+                                <a href="#" class="text-sm text-accent-pink font-medium hover:underline mt-1 block">Start a Subscription</a>
+                            </div>
+                        </div>
+                        <!-- Service Card 3: Corporate -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300">
+                            <i data-lucide="briefcase" class="w-8 h-8 text-accent-pink flex-shrink-0 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary-dark mb-1">Corporate & Event Styling</h3>
+                                <p class="text-gray-600">Branding, galas, and office maintenance. Custom quotes for high-volume orders.</p>
+                                <a href="#" class="text-sm text-accent-pink font-medium hover:underline mt-1 block">Request a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Placeholder (Great for engagement and analytics) -->
+                    <div class="relative pt-[56.25%] lg:pt-0 lg:h-full rounded-2xl overflow-hidden shadow-2xl">
+                        <!-- 16:9 Aspect Ratio Container for video -->
+                        <iframe class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                title="Behind the Scenes at Blossom Flora (Placeholder)">
+                        </iframe>
+                        <div class="absolute inset-0 bg-primary-dark bg-opacity-70 flex flex-col items-center justify-center p-4">
+                            <i data-lucide="flower" class="w-16 h-16 text-white mb-4"></i>
+                            <p class="text-white text-2xl font-serif text-center">Watch our process!</p>
+                            <p class="text-white text-sm text-center">Video: Behind the Scenes of a Custom Bouquet</p>
+                        
+                            <!-- YouTube Video Embed -->
+                            <iframe width="640" height="360"
+                                src="https://www.youtube.com/embed/CzX8TEfnndo"
+                                title="Behind the Scenes of a Custom Bouquet"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        
+                        </div>
+                        
+        </section>
+
+        <!-- 5. Contact & Newsletter Footer -->
+        <footer id="contact" class="bg-primary-dark text-white pt-12 pb-8 rounded-t-2xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <!-- Column 1: Brand -->
+                    <div>
+                        <h4 class="text-2xl font-serif font-bold text-accent-pink mb-3">Blossom Flora</h4>
+                        <p class="text-sm text-gray-300">Fresh Blooms, Fresh Smiles!</p>
+                        <div class="flex space-x-3 mt-4">
+                            <!-- Social Media Icons (Links to other pages) -->
+                            <a href="#" class="text-gray-300 hover:text-accent-pink transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                            <a href="#" class="text-gray-300 hover:text-accent-pink transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                            <a href="#" class="text-gray-300 hover:text-accent-pink transition"><i data-lucide="pinterest" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Shop</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#shop" class="text-gray-300 hover:text-white transition">Anniversary</a></li>
+                            <li><a href="#shop" class="text-gray-300 hover:text-white transition">Birthday</a></li>
+                            <li><a href="#shop" class="text-gray-300 hover:text-white transition">Sympathy</a></li>
+                            <li><a href="#services" class="text-gray-300 hover:text-white transition">Subscriptions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Company -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Company</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#about" class="text-gray-300 hover:text-white transition">Our Story</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition">Careers</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition">Shipping Policy</a></li>
+                            <li><a href="#contact" class="text-gray-300 hover:text-white transition">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Newsletter Sign-up (High analytics/lead capture potential) -->
+                    <div class="col-span-2 md:col-span-1">
+                        <h4 class="text-lg font-semibold mb-3">Get 10% Off Your First Order</h4>
+                        <p class="text-sm text-gray-300 mb-4">Sign up for our newsletter to receive exclusive offers and event updates.</p>
+                        <form onsubmit="handleSignup(event)">
+                            <div class="flex flex-col sm:flex-row gap-2">
+                                <input type="email" id="newsletter-email" placeholder="Enter your email" required
+                                       class="w-full px-4 py-2 text-primary-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-pink">
+                                <button type="submit" class="bg-accent-pink text-white px-4 py-2 rounded-lg font-medium hover:bg-pink-700 transition duration-150">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
+                    &copy; 2024 Blossom Flora. All rights reserved. Designed for Analytics & Growth.
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Cart/Message Modal (Used instead of alert()) -->
+    <div id="message-modal" class="fixed inset-0 bg-black bg-opacity-50 z-[100] hidden flex items-center justify-center p-4" onclick="closeModal()">
+        <div class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-full transform transition duration-300" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-4">
+                <h3 id="modal-title" class="text-xl font-semibold text-primary-dark">Notification</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-primary-dark">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <p id="modal-body" class="text-gray-600">Content goes here.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactions and Analytics Simulation -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // --- Modal Control Functions ---
+        const modal = document.getElementById('message-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+
+        function openModal(title, body) {
+            modalTitle.textContent = title;
+            modalBody.textContent = body;
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+        }
+
+        // --- Simulated E-commerce/Analytics Functions ---
+
+        /**
+         * Simulates adding a product to a cart.
+         * In a real-world scenario, this would trigger an 'add_to_cart'
+         * event for analytics (e.g., Google Analytics 4, Meta Pixel).
+         * @param {string} productName
+         */
+        function addToCart(productName) {
+            console.log(`Analytics Event: Product "${productName}" added to cart.`);
+            // Simulate API call to update server-side cart
+            setTimeout(() => {
+                openModal("Success!", `${productName} has been added to your cart. Time to checkout!`);
+            }, 100);
+        }
+
+        /**
+         * Simulates a newsletter sign-up.
+         * In a real-world scenario, this is a key lead generation action
+         * that would trigger a 'generate_lead' or 'sign_up' event for
+         * campaign optimization.
+         * @param {Event} event
+         */
+        function handleSignup(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('newsletter-email');
+            const email = emailInput.value;
+
+            console.log(`Analytics Event: Lead Generated for email: ${email}`);
+
+            // Simulate sending data to lead capture system
+            setTimeout(() => {
+                openModal("Thank You!", `Welcome! Check your inbox at ${email} for your 10% off coupon.`);
+                emailInput.value = ''; // Clear the input
+            }, 500);
+        }
+
+        /**
+         * Simulates page view logging.
+         * This would be the base event for any page load, helping track
+         * overall traffic and user engagement.
+         */
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("Analytics Event: Page View (page_view) recorded for Blossom Flora Homepage.");
+
+            // In a real application, you would initialize your analytics script here
+            // e.g., ga('send', 'pageview');
+        });
+
+    </script>
+</body>
